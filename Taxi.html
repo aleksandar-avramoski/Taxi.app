@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Taxi App</title>
+        <link type = "text/css" rel = "stylesheet" href = "Taxi.css"> 
+    </head>
+    
+    <body>
+        <div class = "order-container">
+            <div class = "welcome-container">
+                <h1>Welcome to the Taxi App</h1>
+                <h2 class = "order">Order a taxi:</h2>
+            </div>
+
+            <div class = "inputs">
+                <label class = "label" for="location">Pick up Location:</label>
+                <input id = "location" class = "input" type="text" name="pickup-location" required>
+
+                <label class = "label" for="destination">Destination:</label>
+                <input id = "destination" class = "input" type="text" name="destination" required>
+
+                <button id = "submit" type="submit">Book Now</button>
+            </div>
+
+            <div class = "feedback">
+                <label id = "ongoingProcess"></label>
+            </div>
+
+        </div>
+
+        <script src = "Taxi.js"></script>
+    </body>
+
+</html>
